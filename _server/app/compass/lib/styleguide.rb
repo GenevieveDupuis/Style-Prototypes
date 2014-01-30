@@ -5,7 +5,7 @@
 require 'compass'
 require 'toolkit'
 require 'compass-normalize'
-require 'sassy-buttons'
+#require 'sassy-buttons'
 require 'color-schemer'
 require 'modular-scale'
 

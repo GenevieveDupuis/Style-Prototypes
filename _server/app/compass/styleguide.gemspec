@@ -13,17 +13,17 @@ Gem::Specification.new do |s|
   s.name = "styleguide"
   s.rubyforge_project = "styleguide"
   # Description of your extension
-  s.description = %q{Style Guide}
+  s.description = %q{Style Guide for lacitelp.com}
   # A summary of your Compass extension. Should be different than Description
-  s.summary = %q{Awesome style guides}
+  s.summary = %q{Style Guide based on violet primary color}
   # The names of the author(s) of the extension.
   # If more than one author, comma separate inside of the brackets
-  s.authors = ["First Last"]
+  s.authors = ["Genevieve Dupuis"]
   # The email address(es) of the author(s)
   # If more than one author, comma separate inside of the brackets
-  s.email = ["email@domain.com"]
+  s.email = ["info@genevievedupuis.com"]
   # URL of the extension
-  s.homepage = "http://domain.com"
+  s.homepage = "http://www.lacitelp.com"
 
   # Gem Files
   # These are the files to be included in your Compass extension.
