@@ -1,14 +1,32 @@
 @import "layout";
+@import "colors";
+
+h2 {
+  color: $tertiary;
+}
 
 nav ul {
+  
+
+  font-family: 'Questrial', sans-serif;
+  font-size: 150%;
+
   @include breakpoint($vertical-horizontal-nav) {
     @include horizontal-list;
   }
 }
 
 body {
+
   margin: 0;
   padding: 0;
+
+  font-family: 'Droid Serif', serif;
+  color: #888;
+
+  h1, h2, h3, h4, h5{
+    font-family: 'Questrial', sans-serif;
+  }
 }
 
 .page-wrapper {
@@ -27,6 +45,9 @@ body {
 }
 
 #prototype-header {
+  
+  font-family: 'Questrial', sans-serif;
+
   h1, h2, h3, h4, h5, h6, .page-info {
     margin: 0;
     padding: 0;
