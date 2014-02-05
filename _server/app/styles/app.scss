@@ -4,12 +4,15 @@
 #nav {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+  background-color:nth($primary,1);
 }
 
 nav ul {
-  font-family: $ma-font-headers;
+  font-family: $ma-font-body;
   font-size: 135%;
-  letter-spacing: 0.05em;
+  font-weight:200;
+
+  //letter-spacing: 0.05em;
   text-transform:uppercase;
   
   li {
@@ -17,8 +20,8 @@ nav ul {
     margin-bottom:1.75em;
     a {
       text-decoration: none;
-      color: nth($primary,3);
-      border-bottom: 0.75em solid nth($quadrary,2);
+      color: white;
+      border-bottom: 0.75em solid white;
       padding-bottom:0.25em;
       //border-right: 2px solid nth($primary,2);
       //padding-right:0.25em;
@@ -40,7 +43,7 @@ body {
   padding: 0;
 
   font-family: $ma-font-body;
-  color: nth($primary, 2);
+  color: nth($black, 2);
   
   p {
     line-height:  1.5em;
@@ -48,12 +51,14 @@ body {
 
   h1, h2, h3, h4, h5, h6{
     font-family: $ma-font-headers;
-    color: nth($primary, 1);
+    color: nth($black, 2);
   }
   
   h2{
     font-size: 250%; 
-    font-weight:bold;
+    font-weight:400;
+    text-transform:uppercase;
+    color:nth($primary,1);
   }
   
   h3{
@@ -62,28 +67,27 @@ body {
   
   a {
     text-decoration:none;
-    color: nth($quadrary, 3);
+    color: nth($quadrary, 2);
     border-bottom: 1px solid nth($primary, 4);
   }
   
-  .big-button {
-      color: nth($primary, 6);
-      padding: 1em;
-      margin: 1em;
-      border: 1px solid nth($quadrary, 3);
+  .buttons ul li{
+    margin: 0 0 3em 0;
     
-      background: #ff5f5f; /* Old browsers */
-      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-      background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNWY1ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjNmM2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-      background: -moz-linear-gradient(top,  nth($quadrary, 3) 0%, nth($quadrary, 2) 100%); /* FF3.6+ */
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,nth($quadrary, 3)), color-stop(100%,nth($quadrary, 2))); /* Chrome,Safari4+ */
-      background: -webkit-linear-gradient(top,  nth($quadrary, 3) 0%,nth($quadrary, 2) 100%); /* Chrome10+,Safari5.1+ */
-      background: -o-linear-gradient(top,  nth($quadrary, 3) 0%,nth($quadrary, 2) 100%); /* Opera 11.10+ */
-      background: -ms-linear-gradient(top,  nth($quadrary, 3) 0%,nth($quadrary, 2) 100%); /* IE10+ */
-      background: linear-gradient(to bottom,  nth($quadrary, 3) 0%,nth($quadrary, 2) 100%); /* W3C */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=nth($quadrary, 3), endColorstr=nth($quadrary, 2),GradientType=0 ); /* IE6-8 */
-
+    .big-button {
+        color: nth($primary, 6);
+        padding: 1em;
+        border: 1px solid nth($primary, 3);
+        background-color: nth($primary, 1);
     }
+    
+    .small-button {
+        color: nth($primary, 1);
+        padding: 0.5em;
+        border: 1px solid nth($primary, 3);
+        background-color: white;
+    }
+  }
 }
 
 .page-wrapper {
@@ -99,13 +103,13 @@ body {
 }
 
 #prototype-header {
-  
-  font-family: $ma-font-headers;
 
+  background-color: nth($primary,1);
+  
   h1, h2, h3, h4, h5, h6, .page-info {
     margin: 0;
     padding: 0;
-    color: nth($primary, 1);
+    color: white;
     background: none;
     border: none;
     vertical-align: baseline;
@@ -114,8 +118,9 @@ body {
   }
 
   h1 {
-    font-size: 97px;
-    font-weight: normal;
+    font-family: $ma-font-body;
+    font-size: 60px;
+    font-weight: 200;
     text-transform:uppercase;
   }
 
