@@ -22,7 +22,7 @@ nav ul {
     a {
       text-decoration: none;
       color: nth($quadrary,6);
-      border-bottom: 0.75em solid nth($quadrary,3);
+      border-bottom: 0.75em solid darken(nth($primary,1),6);
       padding-bottom:0.25em;
       //text-shadow: 1px 1px 1px nth($black,3);
       
